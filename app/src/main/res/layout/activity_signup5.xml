@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup5Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/saddlebrown"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Please select your field of expertise."
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgProblemTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbMentalHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Mental Health"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rbGrief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Grief"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rbCareer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Career"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/rbEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Education"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSave2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/white"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

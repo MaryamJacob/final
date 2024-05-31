@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryDark">#3262C4</color>
+    <color name="red">#C11515</color>
+    <color name="teal">#FF018786</color>
+    <color name="teal2">#FF03DAC5</color>
+    <color name="purple">#FF6200EE</color>
+    <color name="purple2">#FFBB86FC</color>
+    <color name="darkPurple">#FF210642</color>
+    <color name="saddlebrown">#8B4513</color>
+    <color name="sienna">#A0522D</color>
+
+
+</resources>
