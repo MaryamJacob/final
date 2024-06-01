@@ -21,6 +21,8 @@ public class AvatarActivity extends AppCompatActivity {
     FloatingActionButton avat2;
     FloatingActionButton avat3;
 
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,6 @@ public class AvatarActivity extends AppCompatActivity {
         avat1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 ImageView imageView = (ImageView) findViewById(R.id.avatar);
                 imageView.setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.bear));
             }

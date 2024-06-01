@@ -20,7 +20,7 @@
             android:name=".MoodActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboardActivity3"
+            android:name=".Dashboard2Activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"

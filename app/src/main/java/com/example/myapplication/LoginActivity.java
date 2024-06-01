@@ -26,19 +26,22 @@ public class LoginActivity extends AppCompatActivity {
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textViewNewUser);
 
-        btn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                String Username = username.getText().toString();
-                String Password = password.getText().toString();
-                if (Username.length() == 0 || Password.length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please fill in all details", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                }
-            }
+        btn.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View view) {
+           String Username = username.getText().toString();
+           String Password = password.getText().toString();
 
-        });
+           if (Username.length() == 0 || Password.length() == 0) {
+               Toast.makeText(getApplicationContext(), "Please fill in all details", Toast.LENGTH_SHORT).show();
+           } else {
+               startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+
+           }
+       }
+   });
+
+
 
       tv.setOnClickListener(new View.OnClickListener(){
            @Override
@@ -47,12 +50,6 @@ public class LoginActivity extends AppCompatActivity {
 
           }
        });
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
-            }
-        });
 
 
     }
