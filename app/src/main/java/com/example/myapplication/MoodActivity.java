@@ -58,12 +58,17 @@ public class MoodActivity extends AppCompatActivity {
         buttonHappy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+//                Intent intent = new Intent(MoodActivity.this,chatBox.class);
+//                intent.putExtra("imageResource", R.drawable.happy);
+//                startActivity(intent);
             }
         });
         buttonAnxious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent intent = new Intent(MoodActivity.this,chatBox.class);
+//                intent.putExtra("imageResource", R.drawable.sad);
+//                startActivity(intent);
             }
 
 
@@ -72,6 +77,9 @@ public class MoodActivity extends AppCompatActivity {
         buttonSad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent intent = new Intent(MoodActivity.this,chatBox.class);
+//                intent.putExtra("imageResource", R.drawable.neutral);
+//                startActivity(intent);
 
             }
         });
@@ -79,6 +87,9 @@ public class MoodActivity extends AppCompatActivity {
         buttonUpset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent intent = new Intent(MoodActivity.this,chatBox.class);
+//                intent.putExtra("imageResource", R.drawable.angry);
+//                startActivity(intent);
 
             }
         });

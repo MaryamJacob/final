@@ -60,7 +60,7 @@
             android:id="@+id/imageView8"
             android:layout_width="95dp"
             android:layout_height="92dp"
-            app:srcCompat="@drawable/Upset"
+            app:srcCompat="@drawable/angry"
             tools:layout_editor_absoluteX="200dp"
             tools:layout_editor_absoluteY="86dp" />
 
