@@ -14,23 +14,24 @@
         android:text="How are you feeling today?"
         android:textColor="@color/black"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="85dp"
         android:layout_height="93dp"
         app:srcCompat="@drawable/angry"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="513dp" />
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="86dp" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/happy"
-        tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="86dp" />
 
     <ImageView
@@ -38,15 +39,15 @@
         android:layout_width="89dp"
         android:layout_height="88dp"
         app:srcCompat="@drawable/neutral"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="86dp" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="95dp"
         android:layout_height="92dp"
         app:srcCompat="@drawable/sad"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="86dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

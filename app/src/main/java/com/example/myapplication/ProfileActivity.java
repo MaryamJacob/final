@@ -18,22 +18,29 @@ public class ProfileActivity extends AppCompatActivity {
     ImageView imageView;
     FloatingActionButton button;
     private static int RESULT_LOAD_IMAGE;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
-        imageView = findViewById(R.id.avatar);
         button = findViewById(R.id.floatingActionButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, AvatarActivity.class));
+            }
+        });
+        imageView = findViewById(R.id.avatar);
+        Intent intent = getIntent();
+        int imageResource = intent.getIntExtra("imageResource" ,- 1);
+
+        if (imageResource != -1) {
+            imageView.setImageResource(imageResource);
+        }
 
 
-             button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    startActivity(new Intent(ProfileActivity.this, AvatarActivity.class));
-                }
-            });
+
     }
 
 }

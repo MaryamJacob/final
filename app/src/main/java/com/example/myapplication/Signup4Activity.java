@@ -56,7 +56,7 @@ public class Signup4Activity extends AppCompatActivity {
     }
     private void navigateToNextActivity() {
 
-        Intent intent = new Intent(Signup4Activity.this, LoginActivity.class);
+        Intent intent = new Intent(Signup4Activity.this, Dashboard1Activity.class);
         startActivity(intent);
     }
 }

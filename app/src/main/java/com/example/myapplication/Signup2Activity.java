@@ -37,9 +37,12 @@ public class Signup2Activity extends AppCompatActivity {
                 String Password = password.getText().toString();
                 String Confirm = confirm.getText().toString();
 
-                if (Username.length() == 0 || Password.length() == 0  || Confirm.length() == 0) {
+                if (Username.length() == 0 || Password.length() == 0  || Confirm.length() == 0 ) {
                     Toast.makeText(getApplicationContext(), "Please fill in all details", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                if(Username.contains(" ")){
+                    Toast.makeText(getApplicationContext(), "Username can not contain spaces", Toast.LENGTH_SHORT).show();
+                }else {
                     if (Password.compareTo(Confirm) == 0) {
                         if (isValid(Password)) {
                             Toast.makeText(getApplicationContext(), "Password and Confirm Password didn't match", Toast.LENGTH_SHORT).show();
@@ -58,7 +61,7 @@ public class Signup2Activity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Signup2Activity.this, LoginActivity.class));
+                startActivity(new Intent(Signup2Activity.this, Login1Activity.class));
             }
         });
     }

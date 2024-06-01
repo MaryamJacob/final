@@ -3,14 +3,8 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.View;
-import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity {
     @Override
@@ -22,7 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onTick(long millisUntilFinished){}
             @Override
             public void onFinish(){
-                startActivity(new Intent(MainActivity2.this,LoginActivity.class));
+                startActivity(new Intent(MainActivity2.this, Login1Activity.class));
             }
         }.start();
 
